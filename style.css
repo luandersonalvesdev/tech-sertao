@@ -20,6 +20,13 @@ body header {
   width: 90%;
   justify-content: space-between;
   margin: 10px 30px;
+  position: fixed;
+  z-index: 2;
+}
+
+body header.page-down {
+  background-color: white;
+  /* margin: 0px; */
 }
 
 body header ul {
@@ -37,7 +44,8 @@ main .container-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  height: 100vh;
+  animation: pulse-blood 2s infinite;
 }
 
 main .container-main div {
@@ -52,7 +60,7 @@ main .container-main div #impact-phrase {
   font-size: 1rem;
   filter: opacity(0.9);
   text-justify: auto;
-  margin: 130px 0px 50px 0px;
+  margin: 130px 0px 100px 0px;
   font-family: 'Jost';
 }
 
@@ -63,16 +71,15 @@ main .container-main div p span {
 main .container-main div #we-can-help {
   font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 80px;
   font-family: 'Josefin Sans';
 }
 
 
 main .container-main #hearth-main {
-  width: 150px;
+  width: 180px;
   filter: opacity(0.2);
   position: absolute;
-  top: 50px;
+  top: 190px;
   left: 0;
   right: 0;
   z-index: -1;
@@ -81,9 +88,15 @@ main .container-main #hearth-main {
 }
 
 @keyframes pulse {
-	10% {
+	20% {
     transform: scale(1.1);
     filter: opacity(0.7);
+  }
+}
+
+@keyframes pulse-blood {
+	20% {
+    background-color: rgba(255, 167, 167, 0.795);
   }
 }
 
