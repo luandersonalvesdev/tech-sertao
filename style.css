@@ -8,6 +8,7 @@
 html {
   display: flex;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,19 +18,24 @@ body {
 
 body header {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
-  margin: 10px 30px;
   position: fixed;
   z-index: 2;
+  height: 60px;
 }
 
 body header.page-down {
   background-color: white;
-  /* margin: 0px; */
+}
+
+body header h1 {
+  margin-left: 20px; 
+  margin-top: 5px;
 }
 
 body header ul {
+  margin-right: 20px;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -38,6 +44,7 @@ body header ul {
 
 body header ul li a{
   text-align: center;
+  color: black;
 }
 
 main .container-main {
@@ -69,7 +76,7 @@ main .container-main div p span {
 }
 
 main .container-main div #we-can-help {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 700;
   font-family: 'Josefin Sans';
 }
@@ -79,7 +86,7 @@ main .container-main #hearth-main {
   width: 180px;
   filter: opacity(0.2);
   position: absolute;
-  top: 190px;
+  top: 100px;
   left: 0;
   right: 0;
   z-index: -1;
@@ -101,7 +108,7 @@ main .container-main #hearth-main {
 }
 
 main .container-about {
-  background-color: #CB0003;
+  background-color: #6d0002;
   color: white;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -109,22 +116,52 @@ main .container-about {
 
 main .container-about h2 {
   text-align: center;
-  font-size: 50px;
+  font-size: 3rem;
+  margin: 0px 20px;
 }
 
-main .container-about ul {
+main .container-about p {
+  margin: 50px 30px;
+  font-size: 1.2rem;
+}
+
+main .container-work {
+  margin: 0px 30px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
 }
 
-main .container-about ul li {
+main .container-work h2 {
+  font-size: 3rem;
   text-align: center;
-  margin: 0px 5px;
+  margin-top: 30px;
 }
 
-main .container-about ul li img {
-  margin-top: 70px;
-  margin-bottom: 20px;
-  width: 70px;
+main .container-work p {
+  margin: 30px 0px;
+  font-size: 1.2rem;
+}
+
+main .container-work img {
+  width: 200px;
+}
+
+main .container-work ul {
+  margin: 30px 0px;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+main .container-work ul li:nth-child(1) {
+  color: green;
+}
+
+main .container-work ul li:nth-child(2) {
+  color: orange;
+}
+
+main .container-work ul li:nth-child(3) {
+  color: red;
 }
