@@ -168,6 +168,7 @@ main .container-work ul li:nth-child(3) {
 }
 
 main .container-news {
+  padding: 40px;
   background-color: #c50003;
   color: white;
 }
