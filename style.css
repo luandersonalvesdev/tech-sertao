@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Jost';
+  font-weight: 500;
+}
+
+body header {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 10px 30px;
+}
+
+body header ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body header ul li a{
+  text-align: center;
+}
+
+main .container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+main .container-main div {
+  text-align: center;
+}
+
+main .container-main div span {
+  font-weight: 800;
+  font-size: 29px;
+  filter: opacity(0.8);
+  text-justify: auto;
+}
+
+main .container-main #hearth-main {
+  width: 200px;
+  filter: opacity(0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .container-about {
+  background-color: #CB0003;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+main .container-about h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+main .container-about ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main .container-about ul li {
+  text-align: center;
+  margin: 0px 5px;
+}
+
+main .container-about ul li img {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  width: 70px;
+}
