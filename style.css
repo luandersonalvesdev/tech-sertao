@@ -42,21 +42,49 @@ main .container-main {
 
 main .container-main div {
   text-align: center;
+  position: relative;
+  width: 80%;
 }
 
-main .container-main div span {
+main .container-main div #impact-phrase {
+  display: block;
   font-weight: 800;
-  font-size: 29px;
-  filter: opacity(0.8);
+  font-size: 1rem;
+  filter: opacity(0.9);
   text-justify: auto;
+  margin: 130px 0px 50px 0px;
+  font-family: 'Jost';
 }
+
+main .container-main div p span {
+  color: #CB0003;
+}
+
+main .container-main div #we-can-help {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+  font-family: 'Josefin Sans';
+}
+
 
 main .container-main #hearth-main {
-  width: 200px;
+  width: 150px;
   filter: opacity(0.2);
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
+  right: 0;
+  z-index: -1;
+  margin: auto;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	10% {
+    transform: scale(1.1);
+    filter: opacity(0.7);
+  }
 }
 
 main .container-about {
