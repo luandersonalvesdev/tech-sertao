@@ -22,16 +22,17 @@ body header {
   justify-content: space-between;
   position: fixed;
   z-index: 2;
-  height: 60px;
+  height: 70px;
 }
 
 body header.page-down {
   background-color: white;
 }
 
-body header h1 {
+body header img {
+  margin-top: 20px;
   margin-left: 20px; 
-  margin-top: 5px;
+  height: 30px;
 }
 
 body header ul {
@@ -164,4 +165,30 @@ main .container-work ul li:nth-child(2) {
 
 main .container-work ul li:nth-child(3) {
   color: red;
+}
+
+footer {
+  background-color: #6d0002;
+  padding: 30px 0px;
+}
+
+footer h3 {
+  margin-left: 45px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 10px;
+}
+
+footer ul li img {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 50px;
 }
